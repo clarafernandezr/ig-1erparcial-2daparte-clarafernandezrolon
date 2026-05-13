@@ -1,1 +1,3 @@
-# ig-1erparcial-2daparte-clarafernandezrolon
+Clara Fernandez Rolon
+Primer Parcial - Informática General 
+Artes Multimediales - UNA
