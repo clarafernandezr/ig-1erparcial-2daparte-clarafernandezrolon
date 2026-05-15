@@ -1,3 +1,7 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* body */
 body {
     background: rgba(71, 181, 255) url(materiales-tema2/fondo.png);
@@ -18,17 +22,32 @@ header {
     margin: 0 0 0 0;
 }
 
+#nombre-header {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
 .logo-header {
-    height: 6.5rem; 
+    height: 5.5rem;
     width: auto;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 21.5rem;
+    margin-top: 0.2rem;
+}
+
+.logo-header:hover {
+    height: 7rem;
+    width: auto;
+    margin-left: 20.8rem;
 }
 
 nav {
     margin-left: auto;
     height: 100%;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -45,21 +64,20 @@ nav ul {
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    margin-right: 3rem;
-    gap: 2rem;
+    margin-right: 1rem;
     height: 100%;
 }
 
-.vinculos-header a{
+.vinculos-header a {
     display: flex;
-    color:black;
+    color: black;
     text-decoration: none;
     height: 100%;
     align-items: center;
     padding: 0 1.5rem;
 }
 
-.vinculos-header a:hover{
+.vinculos-header a:hover {
     background-color: rgba(186, 206, 214);
 }
 
@@ -71,24 +89,68 @@ nav ul {
     margin-top: 0.5rem;
 }
 
-.twitter, .facebook, .instagram {
+.twitter,
+.facebook,
+.instagram {
     height: 1.2rem;
     width: 1.2rem;
 }
 
+/* footer */
+footer {
+    background-color: rgb(210, 224, 230);
+    text-align: center;
+    padding: 0.8rem;
+}
+
+footer p {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 0;
+    line-height: 1.1;
+    margin: 0.4rem 0;
+}
+
+/* botón ancla flotante */
+#boton-ancla {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#boton-ancla a {
+    display: block;
+    background-color: rgb(19, 73, 107);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
 /* main pág principal */
-.sec-inicio1, .sec-inicio2 {
-    background-color: rgba(203, 231, 242, 0.8);
+.sec-inicio1,
+.sec-inicio2 {
+    background-color: rgba(203, 231, 242, 0.9);
     width: 80%;
     border-radius: 0.2rem;
     display: flex;
     margin-top: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    align-items: center;
 }
 
-.sec-inicio1 p, .sec-inicio1 h1, .sec-inicio2 p, .sec-inicio2 h2{
+.sec-inicio1 p,
+.sec-inicio1 h1,
+.sec-inicio2 p,
+.sec-inicio2 h2 {
     width: 90%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.5;
+    margin-left: 1rem;
 }
 
 .sec-inicio2 {
@@ -97,10 +159,39 @@ nav ul {
 
 #frase-foto {
     font-style: italic;
-    color: rgb(90,90,90);
+    color: rgb(90, 90, 90);
     font-size: 0.8rem;
 }
 
-#foto-inicio, #osuperman {
-    margin: 2rem 1rem;
+.obj-inicio {
+    margin: 3rem 1rem;
 }
+
+/* main pág2 metodología */
+
+.sec-meto1, .sec-meto2, .sec-meto3 {
+    background-color: rgba(203, 231, 242, 0.9);
+    width: 80%;
+    border-radius: 0.2rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.sec-meto2 {
+    margin-left: auto;
+}
+
+.sec-meto3 p {
+    font-size: large;
+}
+
+.sec-meto1 p, .sec-meto1 h1, .sec-meto2 p, .sec-meto2 h2, .sec-meto3 p, .sec-meto3 h2 {
+    width: 90%;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.5;
+    margin-left: 1rem;
+}
+
